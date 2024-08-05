@@ -1,0 +1,290 @@
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logo-container img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(139, 69, 19, 0.9);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(160, 82, 45, 0.8);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.banner {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: none;
+}
+
+.slider img.active {
+    display: block;
+}
+
+.introduction {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(247, 230, 199, 0.9);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.introduction h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.introduction p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.text-with-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-with-image img {
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.text-with-image p {
+    flex: 1;
+    text-align: justify;
+}
+
+.tabs {
+    margin-top: 20px;
+}
+
+.tab-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(139, 69, 19, 0.9);
+    border-radius: 8px;
+}
+
+.tab-list .tab {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.tab-list .tab:hover {
+    background-color: rgba(160, 82, 45, 0.8);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.food-item {
+    display: flex;
+    margin: 20px 0;
+}
+
+.food-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.food-item h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.food-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.contact {
+    padding: 40px;
+    background-color: rgba(247, 230, 199, 0.9);
+    border-radius: 8px;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact button {
+    padding: 15px;
+    background-color: rgba(139, 69, 19, 0.9);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background-color: rgba(160, 82, 45, 0.8);
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(139, 69, 19, 0.9);
+    color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .text-with-image {
+        flex-direction: column;
+    }
+
+    .text-with-image img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
